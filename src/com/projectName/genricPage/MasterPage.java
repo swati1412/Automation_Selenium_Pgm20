@@ -32,18 +32,15 @@ public class MasterPage
 		FileInputStream fis3 = new FileInputStream(".\\src\\com\\projectName\\Repository\\testdata.Properties");
 		pro3 = new Properties();
 		pro3.load(fis3);
-		
-		
+
 		// Launching browsers -chrome/edge
 		if (pro1.getProperty("browser").equalsIgnoreCase("chrome")) {
 			System.setProperty(pro1.getProperty("driverProperty"), pro1.getProperty("driverPath"));
 			driver = new ChromeDriver();
-			
 
 		} else if (pro1.getProperty("browser").equalsIgnoreCase("firefox")) {
-			System.setProperty(pro1.getProperty("driverProperty"),
-					pro1.getProperty("driverPath"));
-			
+			System.setProperty(pro1.getProperty("driverProperty"), pro1.getProperty("driverPath"));
+
 			driver = new FirefoxDriver();
 
 		} else if (pro1.getProperty("browser").equalsIgnoreCase("edge")) {
@@ -55,9 +52,8 @@ public class MasterPage
 
 		}
 
-	
 		driver.manage().window().maximize();
-		//System.out.println("URL = [" + pro1.getProperty("URL_2") + "]");
-        driver.get(pro1.getProperty("URL_2"));
+		// System.out.println("URL = [" + pro1.getProperty("URL_2") + "]");
+		driver.get(pro1.getProperty("URL_2"));
 	}	
 }
