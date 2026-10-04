@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.projectName.tests.PageFactoryTestAutomationPracticeLoginTest">
+      <class name="com.projectName.tests.AmazonSearchTest">
         <methods>
-          <include name="pageFactoryLoginTest1"/>
-          <include name="pageFactoryLoginTest2"/>
-          <include name="initializePage"/>
+          <include name="amazonSearchScenarioE2E"/>
+          <include name="takesScreenshot"/>
         </methods>
-      </class> <!-- com.projectName.tests.PageFactoryTestAutomationPracticeLoginTest -->
+      </class> <!-- com.projectName.tests.AmazonSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

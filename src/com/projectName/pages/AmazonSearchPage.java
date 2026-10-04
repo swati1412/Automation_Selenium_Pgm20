@@ -28,7 +28,7 @@ public class AmazonSearchPage extends CommonMethods {
 	
 	
     // Continue Shopping button
-    @FindBy(xpath = "//button[contains(text().,'Continue shopping')]")
+    @FindBy(xpath = "//button[contains(text(),'Continue shopping')]")
 	WebElement continueShopping;
 	
 	public void clickContinueShopping()throws Exception {

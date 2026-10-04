@@ -1,17 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-04T15:48:17 IST" name="Default suite" finished-at="2026-10-04T15:48:17 IST" duration-ms="117">
+  <suite started-at="2026-10-04T16:36:48 IST" name="Default suite" finished-at="2026-10-04T16:36:49 IST" duration-ms="453">
     <groups>
     </groups>
-    <test started-at="2026-10-04T15:48:17 IST" name="Default test" finished-at="2026-10-04T15:48:17 IST" duration-ms="117">
-      <class name="testPackage.GitTestClass">
-        <test-method signature="testGit()[pri:0, instance:testPackage.GitTestClass@1e800aaa]" started-at="2026-10-04T15:48:17 IST" name="testGit" finished-at="2026-10-04T15:48:17 IST" duration-ms="29" status="PASS">
+    <test started-at="2026-10-04T16:36:48 IST" name="Default test" finished-at="2026-10-04T16:36:49 IST" duration-ms="453">
+      <class name="com.projectName.tests.AmazonSearchTest">
+        <test-method signature="amazonSearchScenarioE2E()[pri:0, instance:com.projectName.tests.AmazonSearchTest@7756c3cd]" started-at="2026-10-04T16:36:48 IST" name="amazonSearchScenarioE2E" finished-at="2026-10-04T16:36:49 IST" duration-ms="346" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='twotabsearchtextbox']"}
+  (Session info: chrome=154.0.8037.93)
+  (Driver info: chromedriver=153.0.8010.36 (507c6ee3e2f3b2ca0e660547e5b9ea4820c67f4c-refs/branch-heads/8010@{#906}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 319 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'DESKTOP-IFN29VJ', ip: '10.211.22.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{webauthn:extension:cmtgKey=true, mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52273}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=153.0.8010.36 (507c6ee3e2f3b2ca0e660547e5b9ea4820c67f4c-refs/branch-heads/8010@{#906}), userDataDir=C:\Users\QUIKCA~1\AppData\Local\Temp\scoped_dir8232_93165577}, takesHeapSnapshot=true, goog:processID=5920, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=154.0.8037.93, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: f7db5218aac123bdc8f89be063eaf774
+*** Element info: {Using=xpath, value=//input[@id='twotabsearchtextbox']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='twotabsearchtextbox']"}
+  (Session info: chrome=154.0.8037.93)
+  (Driver info: chromedriver=153.0.8010.36 (507c6ee3e2f3b2ca0e660547e5b9ea4820c67f4c-refs/branch-heads/8010@{#906}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 319 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'DESKTOP-IFN29VJ', ip: '10.211.22.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{webauthn:extension:cmtgKey=true, mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52273}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=153.0.8010.36 (507c6ee3e2f3b2ca0e660547e5b9ea4820c67f4c-refs/branch-heads/8010@{#906}), userDataDir=C:\Users\QUIKCA~1\AppData\Local\Temp\scoped_dir8232_93165577}, takesHeapSnapshot=true, goog:processID=5920, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=154.0.8037.93, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: f7db5218aac123bdc8f89be063eaf774
+*** Element info: {Using=xpath, value=//input[@id='twotabsearchtextbox']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.projectName.genricPage.CommonMethods.clickWebElement(CommonMethods.java:46)
+at com.projectName.pages.AmazonSearchPage.clickAmazonSearchBox(AmazonSearchPage.java:17)
+at com.projectName.tests.AmazonSearchTest.amazonSearchScenarioE2E(AmazonSearchTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGit -->
-      </class> <!-- testPackage.GitTestClass -->
+        </test-method> <!-- amazonSearchScenarioE2E -->
+        <test-method is-config="true" signature="takesScreenshot(org.testng.ITestResult)[pri:0, instance:com.projectName.tests.AmazonSearchTest@7756c3cd]" started-at="2026-10-04T16:36:49 IST" name="takesScreenshot" finished-at="2026-10-04T16:36:49 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=amazonSearchScenarioE2E status=FAILURE method=AmazonSearchTest.amazonSearchScenarioE2E()[pri:0, instance:com.projectName.tests.AmazonSearchTest@7756c3cd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takesScreenshot -->
+      </class> <!-- com.projectName.tests.AmazonSearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
